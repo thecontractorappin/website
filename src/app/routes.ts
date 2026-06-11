@@ -1,8 +1,12 @@
 import { createBrowserRouter } from "react-router";
-import { Layout } from "./components/Layout";
-import { HomePage } from "./components/HomePage";
-import { LoginPage } from "./components/LoginPage";
-import { ContactPage } from "./components/ContactPage";
+
+// 1. Step up one level (../), then into components/layout/
+import { Layout } from "../components/layout/Layout";
+
+// 2. Step up one level (../), then into pages/
+import { HomePage } from "../pages/HomePage";
+import { LoginPage } from "../pages/LoginPage";
+import { ContactPage } from "../pages/ContactPage";
 
 export const router = createBrowserRouter([
   {
