@@ -20,15 +20,15 @@ export function Hero() {
           <div className="text-white space-y-8">
             <div className="inline-flex items-center space-x-2 bg-[#00C9D4]/10 backdrop-blur-sm px-4 py-2 rounded-full border border-[#00C9D4]/30">
               <div className="w-2 h-2 bg-[#00C9D4] rounded-full animate-pulse" />
-              <span className="text-sm text-[#00C9D4]">Trusted by 1,200+ Contractors</span>
+              <span className="text-sm text-[#00C9D4]">Trusted by 200+ Contractors</span>
             </div>
 
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
               Manage Every{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00C9D4] to-[#00E5F0]">
-                Contractor
+                Tender
               </span>{" "}
-              Job from One Place
+              from One Place
             </h1>
 
             <p className="text-xl text-gray-300 leading-relaxed">
