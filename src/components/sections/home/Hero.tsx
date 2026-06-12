@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, TrendingUp, Users, Clock, FileText, BarChart3, Calendar, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2, TrendingUp, Users, Clock } from "lucide-react";
 import { Link } from "react-router";
 
 export function Hero() {
@@ -16,8 +16,9 @@ export function Hero() {
 
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
+          
           {/* Left copy */}
-          <div className="text-white space-y-8">
+          <div className="text-white space-y-8 z-10">
             <div className="inline-flex items-center space-x-2 bg-[#00C9D4]/10 backdrop-blur-sm px-4 py-2 rounded-full border border-[#00C9D4]/30">
               <div className="w-2 h-2 bg-[#00C9D4] rounded-full animate-pulse" />
               <span className="text-sm text-[#00C9D4]">Trusted by 200+ Contractors</span>
@@ -69,72 +70,32 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right dashboard preview */}
-          <div className="relative">
-            <div className="relative bg-white/5 backdrop-blur-xl rounded-2xl p-6 border border-[#00C9D4]/20 shadow-2xl">
-              <div className="space-y-4">
-                <div className="flex items-center justify-between pb-4 border-b border-white/10">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#00C9D4] to-[#FF6B2B] rounded-md flex items-center justify-center">
-                      <Zap size={12} className="text-white" fill="white" />
-                    </div>
-                    <h3 className="text-white font-semibold text-sm">Dashboard Overview</h3>
-                  </div>
-                  <span className="text-xs text-[#00C9D4] bg-[#00C9D4]/10 px-3 py-1 rounded-full border border-[#00C9D4]/30">● Live</span>
-                </div>
-
-                <div className="grid grid-cols-2 gap-3">
-                  {[
-                    { icon: BarChart3, gradient: "from-[#00C9D4]/20 to-[#00C9D4]/5", border: "border-[#00C9D4]/30", iconColor: "#00C9D4", badge: "+18%", value: "24", label: "Active Jobs" },
-                    { icon: TrendingUp, gradient: "from-[#FF6B2B]/20 to-[#FF6B2B]/5", border: "border-[#FF6B2B]/30", iconColor: "#FF6B2B", badge: "+6%", value: "92%", label: "On-Time Rate" },
-                    { icon: FileText, gradient: "from-[#00C9D4]/20 to-[#00C9D4]/5", border: "border-[#00C9D4]/30", iconColor: "#00C9D4", badge: "Pending: 4", value: "$48k", label: "Invoiced" },
-                    { icon: Users, gradient: "from-[#FF6B2B]/20 to-[#FF6B2B]/5", border: "border-[#FF6B2B]/30", iconColor: "#FF6B2B", badge: "3 New", value: "38", label: "Team Members" },
-                  ].map(({ icon: Icon, gradient, border, iconColor, badge, value, label }) => (
-                    <div key={label} className={`bg-gradient-to-br ${gradient} backdrop-blur-sm p-4 rounded-xl border ${border}`}>
-                      <div className="flex items-center justify-between mb-2">
-                        <Icon style={{ color: iconColor }} size={18} />
-                        <span className="text-[#00C9D4] text-xs">{badge}</span>
-                      </div>
-                      <p className="text-2xl font-bold text-white">{value}</p>
-                      <p className="text-xs text-gray-400">{label}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="bg-white/5 rounded-xl border border-white/10 p-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <p className="text-sm text-white font-medium">Project Pipeline</p>
-                    <span className="text-xs text-[#FF6B2B]">8 Active</span>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex items-center space-x-3">
-                      <div className="flex-1 bg-white/10 rounded-full h-2">
-                        <div className="bg-gradient-to-r from-[#00C9D4] to-[#FF6B2B] h-2 rounded-full" style={{ width: "68%" }} />
-                      </div>
-                      <span className="text-xs text-white">68%</span>
-                    </div>
-                    <div className="flex justify-between text-xs text-gray-400">
-                      <span>$124k in pipeline</span>
-                      <span>$84k completed</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white/5 rounded-xl border border-white/10 p-4">
-                  <div className="flex items-center space-x-3">
-                    <Calendar style={{ color: "#00C9D4" }} size={16} />
-                    <div>
-                      <p className="text-sm text-white font-medium">This Week</p>
-                      <p className="text-xs text-gray-400">12 jobs scheduled · 3 pending approval · 2 completed today</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          {/* Right actual app previews */}
+          <div className="relative mt-12 lg:mt-0 pl-4 sm:pl-10">
+            {/* Desktop View */}
+            <div className="relative z-10 rounded-2xl overflow-hidden border border-[#00C9D4]/30 shadow-[0_0_50px_rgba(0,201,212,0.15)] group">
+              <img 
+                src="/Desktop-view.jpg" 
+                alt="Astute Dashboard Desktop View" 
+                className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
+              />
+              {/* Subtle glassmorphism overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             </div>
 
-            <div className="absolute -top-6 -right-6 w-40 h-40 bg-[#00C9D4]/15 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-[#FF6B2B]/15 rounded-full blur-3xl pointer-events-none" />
+            {/* Mobile View - Floating over the bottom left */}
+            <div className="absolute -bottom-12 -left-4 sm:-left-6 w-[40%] min-w-[150px] z-20 rounded-3xl overflow-hidden border-4 border-[#0A1628] shadow-2xl group transition-transform duration-500 hover:-translate-y-2">
+              <img 
+                src="/Mobile-view.jpg" 
+                alt="Astute Dashboard Mobile View" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            {/* Backdrop glow specific to the images */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#00C9D4]/10 to-[#FF6B2B]/10 rounded-full blur-3xl pointer-events-none -z-10" />
           </div>
+
         </div>
       </div>
     </section>
