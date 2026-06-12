@@ -75,7 +75,7 @@ export function Hero() {
             {/* Desktop View */}
             <div className="relative z-10 rounded-2xl overflow-hidden border border-[#00C9D4]/30 shadow-[0_0_50px_rgba(0,201,212,0.15)] group">
               <img 
-                src="/Desktop-view.jpg" 
+                src="/Desktop-view.png" 
                 alt="Astute Dashboard Desktop View" 
                 className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
               />
@@ -86,7 +86,7 @@ export function Hero() {
             {/* Mobile View - Floating over the bottom left */}
             <div className="absolute -bottom-12 -left-4 sm:-left-6 w-[40%] min-w-[150px] z-20 rounded-3xl overflow-hidden border-4 border-[#0A1628] shadow-2xl group transition-transform duration-500 hover:-translate-y-2">
               <img 
-                src="/Mobile-view.jpg" 
+                src="/Mobile-view.png" 
                 alt="Astute Dashboard Mobile View" 
                 className="w-full h-auto object-cover"
               />
