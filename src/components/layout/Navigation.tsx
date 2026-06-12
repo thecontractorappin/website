@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -18,9 +18,11 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-9 h-9 bg-gradient-to-br from-[#00C9D4] to-[#FF6B2B] rounded-lg flex items-center justify-center shadow-lg">
-              <Zap size={18} className="text-white" fill="white" />
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="The Contractor App Logo" 
+              className="h-9 w-auto object-contain" 
+            />
             <span className="text-white font-bold text-lg tracking-tight">
               the<span className="text-[#00C9D4]">contractor</span>
               <span className="text-[#FF6B2B]">app</span>
