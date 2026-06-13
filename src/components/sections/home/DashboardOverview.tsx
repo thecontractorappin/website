@@ -31,7 +31,7 @@ export const DashboardOverview = () => {
               and the complete grid of 12 brightly colored module tiles (Ledger to Tasks). 
             */}
             <img 
-              src="/path/to/your/image_2.png" // Replace with your actual path!
+              src="/path/to/your/Desktop-view.png" // Replace with your actual path!
               alt="Astute Contractor PC Web Dashboard Overview"
               className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" 
             />
@@ -48,7 +48,7 @@ export const DashboardOverview = () => {
                 stacking the financial overview and the grid of 12 modules for easy thumb navigation. 
               */}
               <img 
-                src="/path/to/your/image_1.png" // Replace with your actual path!
+                src="/path/to/your/Mobile-view.png" // Replace with your actual path!
                 alt="Astute Contractor Mobile App Dashboard Overview"
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" 
               />
