@@ -1,5 +1,4 @@
 import { ArrowRight, CheckCircle2, TrendingUp, Users, Clock } from "lucide-react";
-import { Link } from "react-router";
 
 export function Hero() {
   return (
@@ -23,7 +22,7 @@ export function Hero() {
         </svg>
       </div>
 
-      {/* Glow blobs (Updated for light mode) */}
+      {/* Glow blobs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#00C9D4]/20 rounded-full blur-3xl pointer-events-none mix-blend-multiply" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#FF6B2B]/15 rounded-full blur-3xl pointer-events-none mix-blend-multiply" />
 
@@ -50,13 +49,14 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/login"
+              {/* 💡 UPDATED: Standard anchor tag pointing to your Render subdomain */}
+              <a
+                href="https://app.thecontractorapp.in/company-registration.html"
                 className="px-8 py-4 bg-gradient-to-r from-[#FF6B2B] to-[#FF8C42] text-white rounded-xl hover:shadow-[0_0_20px_rgba(255,107,43,0.3)] transition-all flex items-center justify-center space-x-2 group font-semibold"
               >
                 <span>Start Free Trial</span>
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
               <a
                 href="#features"
                 className="px-8 py-4 bg-white text-slate-800 rounded-xl hover:bg-slate-50 transition-all border border-slate-200 text-center shadow-sm font-medium"
@@ -104,7 +104,7 @@ export function Hero() {
               />
             </div>
 
-            {/* Backdrop glow specific to the images (Softened for light mode) */}
+            {/* Backdrop glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#00C9D4]/10 to-[#FF6B2B]/10 rounded-full blur-3xl pointer-events-none -z-10" />
           </div>
 
