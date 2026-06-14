@@ -16,7 +16,7 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0A1628]/95 backdrop-blur-md border-b border-[#00C9D4]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Logo - Stays as a <Link> because it navigates internally on the welcome site */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
               src="/logo.png" 
@@ -44,18 +44,20 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-3">
-            <Link
-              to="/login"
+            {/* 💡 UPDATED: Standard anchor tag pointing to your Render subdomain */}
+            <a
+              href="https://app.thecontractorapp.in/index.html"
               className="text-sm text-gray-300 hover:text-white transition-colors px-4 py-2"
             >
               Log In
-            </Link>
-            <Link
-              to="/login"
+            </a>
+            {/* 💡 UPDATED: Standard anchor tag pointing to your Render subdomain */}
+            <a
+              href="https://app.thecontractorapp.in/company-registration.html"
               className="text-sm font-semibold px-5 py-2 bg-gradient-to-r from-[#00C9D4] to-[#00A8B5] text-white rounded-lg hover:shadow-[0_0_20px_rgba(0,201,212,0.4)] transition-all"
             >
               Start Free Trial
-            </Link>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -81,13 +83,25 @@ export function Navigation() {
               {l.label}
             </a>
           ))}
-          <Link
-            to="/login"
-            className="block text-center py-3 bg-gradient-to-r from-[#00C9D4] to-[#00A8B5] text-white rounded-lg font-semibold mt-2"
-            onClick={() => setMobileOpen(false)}
-          >
-            Start Free Trial
-          </Link>
+          
+          <div className="pt-2 flex flex-col space-y-2">
+            {/* 💡 ADDED & UPDATED: Mobile Log In Button */}
+            <a
+              href="https://app.thecontractorapp.in/index.html"
+              className="block text-center py-2 border border-slate-600 text-gray-200 hover:text-white hover:bg-slate-800 rounded-lg font-medium transition-colors"
+              onClick={() => setMobileOpen(false)}
+            >
+              Log In
+            </a>
+            {/* 💡 UPDATED: Mobile Start Free Trial Button */}
+            <a
+              href="https://app.thecontractorapp.in/company-registration.html"
+              className="block text-center py-3 bg-gradient-to-r from-[#00C9D4] to-[#00A8B5] text-white rounded-lg font-semibold"
+              onClick={() => setMobileOpen(false)}
+            >
+              Start Free Trial
+            </a>
+          </div>
         </div>
       )}
     </nav>
