@@ -8,6 +8,9 @@ import { HomePage } from "../pages/HomePage";
 import { LoginPage } from "../pages/LoginPage";
 import { ContactPage } from "../pages/ContactPage";
 
+// 3. Import your new Privacy Policy component
+import { PrivacyPolicy } from "../components/sections/home/PrivacyPolicy";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +19,7 @@ export const router = createBrowserRouter([
       { index: true, Component: HomePage },
       { path: "login", Component: LoginPage },
       { path: "contact", Component: ContactPage },
+      { path: "privacy-policy", Component: PrivacyPolicy },
     ],
   },
 ]);
