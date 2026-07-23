@@ -5,7 +5,7 @@ export function PrivacyPolicy() {
             <p><strong>Effective Date:</strong> July 24, 2026</p>
             <p><strong>Company:</strong> RHMRAstute Solutions India Pvt Ltd</p>
 
-            <p>RHMRAstute Solutions India Pvt Ltd("we," "our," or "us") operates <strong>The Contractor App</strong> (the "App"), a B2B Software-as-a-Service (SaaS) platform for construction management, inventory tracking, and workforce administration.</p>
+            <p>RHMRAstute Solutions India Pvt Ltd ("we," "our," or "us") operates <strong>The Contractor App</strong> (the "App"), a B2B Software-as-a-Service (SaaS) platform for construction management, inventory tracking, and workforce administration.</p>
 
             <h2>1. Information We Collect</h2>
             <p>We collect information that identifies, relates to, describes, or could reasonably be linked to you or your company ("Personal Information").</p>
@@ -33,7 +33,10 @@ export function PrivacyPolicy() {
             <h2>4. Data Security</h2>
             <p>We use industry-standard encryption, password hashing, and secure HTTPS protocols to protect your business and personal data.</p>
 
-            <h2>5. Contact Us</h2>
+            <h2>5. Data Retention & Account Deletion</h2>
+            <p>We retain your data for as long as your company maintains an active subscription with us. <strong>If you wish to request the deletion of your account and all associated personal data, please email us directly at support@thecontractorapp.in.</strong> Upon a verified request, we will process the deletion of your specific account and associated files from our active servers within a reasonable timeframe, subject to any legal obligations to retain certain business records.</p>
+
+            <h2>6. Contact Us</h2>
             <p>If you have questions about this policy, contact us at:</p>
             <p><strong>RHMRAstute Solutions India Pvt Ltd</strong><br />Email: support@thecontractorapp.in</p>
         </div>
