@@ -1,6 +1,8 @@
 export function PrivacyPolicy() {
     return (
-        <div style={{ padding: '40px', maxWidth: '800px', margin: '0 auto', fontFamily: 'Arial, sans-serif', lineHeight: '1.6' }}>
+        // I changed the padding below from '40px' to '120px 40px 40px'
+        // This adds extra space only at the top of the content.
+        <div style={{ padding: '120px 40px 40px', maxWidth: '800px', margin: '0 auto', fontFamily: 'Arial, sans-serif', lineHeight: '1.6' }}>
             <h1>Privacy Policy for The Contractor App</h1>
             <p><strong>Effective Date:</strong> July 24, 2026</p>
             <p><strong>Company:</strong> RHMRAstute Solutions India Pvt Ltd</p>
