@@ -17,20 +17,20 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Australia's most powerful platform built for trade contractors and field service businesses.
+              India's most powerful platform built for contractors and Construction businesses.
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-center space-x-2">
                 <Mail size={14} className="text-[#00C9D4]" />
-                <span>hello@thecontractorapp.com.au</span>
+                <span>support@thecontractorapp.in</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={14} className="text-[#FF6B2B]" />
-                <span>+61 2 9000 0000</span>
+                <span>+91 9419417800</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin size={14} className="text-[#00C9D4]" />
-                <span>Sydney, NSW 2000</span>
+                <span>Delhi, India</span>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@ export function Footer() {
           {/* CTA */}
           <div className="space-y-4">
             <h4 className="text-white font-semibold">Get Started Free</h4>
-            <p className="text-sm text-gray-400">14-day free trial. No credit card needed.</p>
+            <p className="text-sm text-gray-400">28-day free trial. No credit card or Pre Payment needed.</p>
             <Link
               to="/login"
               className="block text-center py-3 bg-gradient-to-r from-[#FF6B2B] to-[#FF8C42] text-white rounded-xl text-sm font-semibold hover:shadow-[0_0_20px_rgba(255,107,43,0.35)] transition-all"
@@ -77,13 +77,13 @@ export function Footer() {
               to="/contact"
               className="block text-center py-3 bg-white/5 border border-white/10 text-gray-300 rounded-xl text-sm hover:bg-white/10 transition-all"
             >
-              Book a Demo
+              Book a Meeting
             </Link>
           </div>
         </div>
 
         <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© 2026 thecontractorapp Pty Ltd. All rights reserved.</p>
+          <p>© 2026 RHMRAstute Solutions India Pvt. Ltd. All rights reserved.</p>
           <div className="flex space-x-6">
             <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-gray-300 transition-colors">Terms of Service</a>
