@@ -20,7 +20,7 @@ export function ContactPage() {
           <span className="text-sm font-semibold text-[#FF6B2B] uppercase tracking-wider">Get in Touch</span>
           <h1 className="mt-2 text-4xl font-bold text-white">We'd Love to Hear from You</h1>
           <p className="mt-4 text-gray-400 max-w-xl mx-auto">
-            Have questions? Want a demo? Our team is standing by to help you get started.
+            Have questions? Want a demo meeting? Our team is standing by to help you get started.
           </p>
         </div>
       </div>
@@ -39,7 +39,7 @@ export function ContactPage() {
                 </span>
               </Link>
               <p className="text-gray-500 leading-relaxed">
-                Australia's most powerful platform for trade contractors. We're here to help you save time, win more work, and grow your business.
+                India's most powerful platform for Contractors and Real-Estate Developers. We're here to help you save time, win more work, and grow your business.
               </p>
             </div>
 
@@ -48,29 +48,29 @@ export function ContactPage() {
                 {
                   icon: Mail,
                   label: "Email Us",
-                  value: "hello@thecontractorapp.com.au",
+                  value: "support@thecontractorapp.in",
                   sub: "We reply within 1 business day",
                   color: "#00C9D4",
                 },
                 {
                   icon: Phone,
                   label: "Call Us",
-                  value: "+61 2 9000 0000",
+                  value: "+91 9419417800",
                   sub: "Mon–Fri, 8am–6pm AEST",
                   color: "#FF6B2B",
                 },
                 {
                   icon: MapPin,
                   label: "Our Office",
-                  value: "Level 12, 1 Market Street, Sydney NSW 2000",
-                  sub: "Australia",
+                  value: "3rd Floor, Plot No A-4, Kh No 3523/1512, Near Metro Pillar 340, Chotey Lal Park Ramesh Nagar",
+                  sub: "Basai Darapur, New Delhi, India",
                   color: "#00C9D4",
                 },
                 {
                   icon: Clock,
                   label: "Support Hours",
-                  value: "24/7 in-app live chat",
-                  sub: "Pro & Enterprise plans",
+                  value: "24/7 On-Call Support",
+                  sub: "Single-User & Multi-User, Enterprise plans",
                   color: "#FF6B2B",
                 },
               ].map(({ icon: Icon, label, value, sub, color }) => (
@@ -93,8 +93,8 @@ export function ContactPage() {
                 <MessageCircle size={20} className="text-white" />
               </div>
               <div>
-                <p className="font-semibold text-[#0A1628]">Chat with us now</p>
-                <p className="text-sm text-gray-500">Average response time under 2 minutes</p>
+                <p className="font-semibold text-[#0A1628]">Contact us now</p>
+                <p className="text-sm text-gray-500">Give us a try</p>
               </div>
             </div>
           </div>
