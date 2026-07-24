@@ -1,34 +1,34 @@
 import { useState } from "react";
-import { CheckSquare, Calendar, FileText, Users, BarChart3, Shield, MapPin, DollarSign } from "lucide-react";
+import { CheckSquare, Clock, Tractor, Users, BarChart3, ShoppingCart, MapPin, DollarSign } from "lucide-react";
 
 const features = [
   {
     icon: CheckSquare,
-    label: "Job Management",
+    label: "Project Management",
     color: "#00C9D4",
-    desc: "Create, assign, and track every job from start to finish with full status visibility.",
-    bullets: ["Customisable job stages", "Attach files & photos", "Client sign-off portal", "Job cost tracking"],
+    desc: "Create, assign, and track every project from start to finish with full status visibility and budgeting.",
+    bullets: ["Customisable project stages", "Attach files & BOQs", "Live progress tracking", "Project budget vs. actuals"],
   },
   {
-    icon: Calendar,
-    label: "Smart Scheduling",
+    icon: Clock,
+    label: "Attendance Monitoring",
     color: "#FF6B2B",
-    desc: "Drag-and-drop scheduler that accounts for crew availability, skills, and location.",
-    bullets: ["Visual Gantt timeline", "Conflict detection", "Recurring job templates", "Client booking portal"],
+    desc: "Track workforce attendance in real-time with precise location verification and automated logging.",
+    bullets: ["GPS location stamping", "Selfie & identity verification", "Late & absent alerts", "Automated timesheet sync"],
   },
   {
-    icon: FileText,
-    label: "Invoicing & Quotes",
+    icon: Tractor,
+    label: "Machinery Management",
     color: "#00C9D4",
-    desc: "Generate professional quotes and invoices in seconds — straight from a completed job.",
-    bullets: ["Auto-populate from job data", "Stripe & bank payments", "Overdue reminders", "Tax & GST handling"],
+    desc: "Keep track of your entire fleet, equipment locations, maintenance schedules, and daily fuel logs.",
+    bullets: ["Fleet & fuel consumption logs", "Maintenance scheduling", "Asset location tracking", "Machine utilization reports"],
   },
   {
     icon: Users,
     label: "Crew & Team",
     color: "#FF6B2B",
-    desc: "Manage your whole workforce — employees, subcontractors, and freelancers — in one place.",
-    bullets: ["Timesheet approval", "Skills & cert tracking", "Role-based access", "Performance metrics"],
+    desc: "Manage your whole workforce — employees, subcontractors, and laborers — in one centralized HR hub.",
+    bullets: ["Centralized worker database", "Advance & loan tracking", "Role-based system access", "Worker performance & history"],
   },
   {
     icon: MapPin,
@@ -38,25 +38,25 @@ const features = [
     bullets: ["GPS check-in/out", "Live job site map", "Photo & note logging", "Offline mobile support"],
   },
   {
-    icon: Shield,
-    label: "Compliance",
+    icon: ShoppingCart,
+    label: "Shop Hub",
     color: "#FF6B2B",
-    desc: "Stay audit-ready with automated licence tracking, SWMS, and incident reporting.",
-    bullets: ["Licence renewal alerts", "SWMS builder", "Incident reports", "Insurance tracking"],
+    desc: "Streamline your material ordering, vendor management, and on-site procurement workflows.",
+    bullets: ["Material requisitions", "Vendor & supplier database", "Purchase order generation", "Delivery & stock tracking"],
   },
   {
     icon: DollarSign,
     label: "Payroll",
     color: "#00C9D4",
     desc: "Process accurate payroll based on actual timesheets with award interpretation.",
-    bullets: ["Award rate engine", "Xero/MYOB integration", "Contractor payments", "Leave management"],
+    bullets: ["Automated wage calculation", "Contractor payments", "Overtime tracking", "Leave & allowance management"],
   },
   {
     icon: BarChart3,
-    label: "Analytics",
+    label: "Financial Management",
     color: "#FF6B2B",
-    desc: "Understand your business performance with live dashboards and custom reports.",
-    bullets: ["Revenue vs. forecast", "Job profitability", "Crew utilisation", "Client retention"],
+    desc: "Gain complete control over your company's finances with real-time income, expense, and balance tracking.",
+    bullets: ["T-Ledger transaction tracking", "Capital & asset management", "Expense categorization", "Live net balance dashboard"],
   },
 ];
 
