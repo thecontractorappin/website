@@ -56,7 +56,7 @@ export function ContactPage() {
                   icon: Phone,
                   label: "Call Us",
                   value: "+91 9419417800",
-                  sub: "Mon–Fri, 8am–6pm AEST",
+                  sub: "Mon–Fri, 8am–6pm",
                   color: "#FF6B2B",
                 },
                 {
