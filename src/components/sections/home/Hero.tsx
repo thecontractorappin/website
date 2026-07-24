@@ -45,7 +45,7 @@ export function Hero() {
             </h1>
 
             <p className="text-xl text-slate-600 leading-relaxed">
-              Scheduling, timesheets, invoicing, compliance, and team management — all in one powerful platform built for modern contractors.
+              Project Management, Human Resource Management, Machinery Management, Sub-Contractor Management, Management of Personal Finance — all in one powerful platform built for modern Construction Companies and solo contractors.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
