@@ -37,9 +37,9 @@ export function Hero() {
             </div>
 
             <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-              Manage Every{" "}
+              Manage ALL{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#008B94] to-[#00C9D4]">
-                Tender
+                PROJECTS
               </span>{" "}
               from One Place
             </h1>
