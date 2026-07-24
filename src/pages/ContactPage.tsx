@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Clock, ArrowRight, MessageCircle, Zap } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, ArrowRight, MessageCircle } from "lucide-react";
 import { Link } from "react-router";
 
 export function ContactPage() {
@@ -8,6 +8,23 @@ export function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // 1. Define your WhatsApp number (include country code, no + or spaces)
+    const whatsappNumber = "919419417800"; 
+    
+    // 2. Format the message with line breaks and bolding (*)
+    const whatsappMessage = `*New Website Inquiry* 🚀\n\n*Name:* ${form.name}\n*Email:* ${form.email}\n*Company:* ${form.company || "Not provided"}\n\n*Message:*\n${form.message}`;
+    
+    // 3. Encode the message for a URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // 4. Create the wa.me link
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // 5. Open WhatsApp in a new tab
+    window.open(whatsappUrl, "_blank");
+    
+    // 6. Show the success state on the UI
     setSent(true);
   };
 
@@ -31,9 +48,12 @@ export function ContactPage() {
           <div className="space-y-8">
             <div>
               <Link to="/" className="inline-flex items-center space-x-2 mb-6">
-                <div className="w-9 h-9 bg-gradient-to-br from-[#00C9D4] to-[#FF6B2B] rounded-lg flex items-center justify-center">
-                  <Zap size={16} className="text-white" fill="white" />
-                </div>
+                {/* Updated to use your actual logo */}
+                <img 
+                  src="/logo.png" 
+                  alt="The Contractor App Logo" 
+                  className="h-9 w-auto object-contain" 
+                />
                 <span className="font-bold text-lg text-[#0A1628]">
                   the<span className="text-[#00C9D4]">contractor</span><span className="text-[#FF6B2B]">app</span>
                 </span>
@@ -103,18 +123,16 @@ export function ContactPage() {
           <div className="bg-[#F7F9FC] rounded-2xl p-8 border border-gray-100 shadow-sm">
             {sent ? (
               <div className="flex flex-col items-center justify-center h-full py-12 text-center space-y-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#00C9D4] to-[#FF6B2B] rounded-full flex items-center justify-center">
-                  <svg width="24" height="20" viewBox="0 0 24 20" fill="none">
-                    <path d="M2 10L9 17L22 2" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                <div className="w-16 h-16 bg-[#25D366]/20 rounded-full flex items-center justify-center">
+                  <MessageCircle size={32} className="text-[#25D366]" />
                 </div>
-                <h3 className="text-xl font-bold text-[#0A1628]">Message Sent!</h3>
-                <p className="text-gray-500">Thanks for reaching out. We'll get back to you within 1 business day.</p>
+                <h3 className="text-xl font-bold text-[#0A1628]">Redirecting to WhatsApp...</h3>
+                <p className="text-gray-500">Your message has been prepared. If WhatsApp didn't open automatically, please allow pop-ups.</p>
                 <button
                   onClick={() => { setSent(false); setForm({ name: "", email: "", company: "", message: "" }); }}
                   className="mt-2 text-[#00C9D4] hover:text-[#00A8B5] font-medium text-sm"
                 >
-                  Send another message
+                  Start a new message
                 </button>
               </div>
             ) : (
@@ -168,9 +186,10 @@ export function ContactPage() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full py-3.5 bg-gradient-to-r from-[#FF6B2B] to-[#FF8C42] text-white rounded-xl font-semibold hover:shadow-[0_0_25px_rgba(255,107,43,0.35)] transition-all flex items-center justify-center space-x-2 group"
+                    className="w-full py-3.5 bg-[#25D366] text-white rounded-xl font-semibold hover:shadow-[0_0_25px_rgba(37,211,102,0.35)] hover:bg-[#20bd5a] transition-all flex items-center justify-center space-x-2 group"
                   >
-                    <span>Send Message</span>
+                    <MessageCircle size={20} />
+                    <span>Send via WhatsApp</span>
                     <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </button>
                 </form>
