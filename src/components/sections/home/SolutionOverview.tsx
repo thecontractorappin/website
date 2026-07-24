@@ -7,7 +7,7 @@ const modules = [
   { icon: Users, label: "Team & Crew", color: "#FF6B2B" },
   { icon: MapPin, label: "Field Tracking", color: "#00C9D4" },
   { icon: DollarSign, label: "Payroll", color: "#FF6B2B" },
-  { icon: Shield, label: "Compliance", color: "#00C9D4" },
+  { icon: Shield, label: "Secure", color: "#00C9D4" },
   { icon: BarChart3, label: "Analytics", color: "#FF6B2B" },
   { icon: Briefcase, label: "CRM & Clients", color: "#00C9D4" },
   { icon: Zap, label: "Automations", color: "#FF6B2B" },
@@ -21,19 +21,19 @@ export function SolutionOverview() {
           <div>
             <span className="text-sm font-semibold text-[#00C9D4] uppercase tracking-wider">The Solution</span>
             <h2 className="mt-2 text-4xl font-bold text-[#0A1628] leading-tight">
-              One Platform Built for{" "}
+              Single Platform Built for All{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00C9D4] to-[#FF6B2B]">
-                Contractors
+                Real Estate Moguls to Freelance Contractors
               </span>
             </h2>
             <p className="mt-4 text-lg text-gray-500 leading-relaxed">
-              thecontractorapp replaces a dozen disconnected tools with a single, intuitive platform — so you can focus on the work, not the admin.
+              thecontractorapp replaces a dozen disconnected tools with a single, innovative platform — so you can focus on the work, not the admin.
             </p>
             <ul className="mt-8 space-y-3">
               {[
                 "From quote to invoice in one workflow",
                 "Real-time job and crew visibility",
-                "Automated compliance reminders",
+                "Automated Machinery management",
                 "Mobile-first for field workers",
               ].map((item) => (
                 <li key={item} className="flex items-center space-x-3">
