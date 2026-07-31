@@ -171,7 +171,7 @@ export function Pricing() {
                     : "bg-white/10 text-white hover:bg-white/20 border border-white/20 hover:scale-[1.02]"
                 }`}
               >
-                Start 14-Day Free Trial
+                Start 28-Day Free Trial
               </a>
             </div>
           ))}
