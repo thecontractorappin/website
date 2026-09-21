@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2, TrendingUp, Users, Clock } from "lucide-react";
-import { AppDownloadPopup } from "./AppDownloadPopup"; 
+import { AppDownloadPopup } from "../../AppDownloadPopup"; 
 
 export function Hero() {
   return (
