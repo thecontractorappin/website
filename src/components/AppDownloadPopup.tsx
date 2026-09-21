@@ -17,7 +17,7 @@ export function AppDownloadPopup() {
   return (
     <div className={"fixed top-32 right-0 z-50 flex items-start transition-transform duration-500 ease-in-out " + (isOpen ? "translate-x-0" : "translate-x-80")}>
       
-      <!-- Collapsed Toggle Button -->
+      
       <button onClick={togglePopup} className="bg-white shadow-[-4px_4px_15px_rgba(0,0,0,0.15)] rounded-l-xl p-3 mt-4 border border-r-0 border-gray-200 hover:bg-gray-50 transition-colors flex items-center justify-center cursor-pointer" title={isOpen ? "Close Popup" : "Download App"}>
         {isOpen ? (
           <X className="text-gray-600" size={24} />
@@ -26,13 +26,13 @@ export function AppDownloadPopup() {
         )}
       </button>
 
-      <!-- Main Popup Panel -->
+      
       <div className="bg-[#0A1628]/95 backdrop-blur-xl border border-white/20 shadow-2xl rounded-bl-2xl p-6 w-80 relative overflow-hidden h-auto border-r-0">
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-32 h-32 bg-[#00C9D4]/20 rounded-full blur-2xl pointer-events-none" />
         
         <div className="flex items-center space-x-3 mb-4 relative z-10">
           <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg p-1.5 shrink-0">
-            <!-- ADDED: Your Official App Logo -->
+            
             <img src="/logo.png" alt="The Contractor App Logo" className="w-full h-full object-contain" />
           </div>
           <div>
